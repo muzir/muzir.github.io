@@ -68,7 +68,7 @@ services:
 
 ```
 
-Now you may want to test just zookeeper servers. First define the hostname in your local host file. It should be look as below.
+Now you may want to test just zookeeper servers. First define the hostname in your local host file. It should be in ```/etc/hosts``` and look as below.
 
 ```
 127.0.0.1	localhost
