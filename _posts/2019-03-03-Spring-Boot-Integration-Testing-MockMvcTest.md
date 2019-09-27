@@ -108,12 +108,6 @@ As you see ```@WebMvcTest(ProductController.class)``` we don't even need all web
 There are few important points to determine which classes should be mocked. We need to mock ```productService``` 
 and ```productMapper```. Because these beans are using as a subfields or in other words depended by ```ProductController``` class. 
 
-Another important point to keep in my that, the beans which are defined as ```@MockBean``` should be interface, otherwise ```ProductController``` bean
-can't be initialized. If your dependencies are not interface or not implementing an interface then you most likely will get ```java.lang.IllegalStateException: Failed to load ApplicationContext```
-exception in detailed you will see error message as 
-
-```Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController'.```
-
 We are also using 2 autowired beans ```mockMvc``` and ```objectMapper``` so ```mockMvc``` helps us to call our endpoint and ```objectMapper```
 helps us to convert java object to json which will be converted by ```RequestBody``` in our controller.
 
