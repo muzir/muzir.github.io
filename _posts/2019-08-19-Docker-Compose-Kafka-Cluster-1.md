@@ -108,7 +108,7 @@ ls /consumers
 
 Ok, we are sure that zookeeper is working properly.
 
-## Kafka configuration
+## <a name="configureKafka"></a> Kafka configuration
 
 We will add kafka brokers to the docker-compose.yaml. Kafka needs zookeeper because of controller election, configuration of topics, access control lists, membership of the cluster etc. functionalities.
 Kafka brokers depends on zookeeper and open the ports 19092, 29092, 39092 in each. We also have some JMX environment variable for kafka manager which helps to pull some data for monitoring.
