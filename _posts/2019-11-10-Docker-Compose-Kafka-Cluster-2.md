@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Kafka Cluster with Docker Compose
+title:  Kafka Cluster with Docker Compose Part 2
 categories: [docker, docker-compose, kafka]
 fullview: false
 ---
