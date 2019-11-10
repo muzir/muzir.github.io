@@ -108,7 +108,7 @@ ls /consumers
 
 Ok, we are sure that zookeeper is working properly.
 
-## Kafka configuration
+## <a name="configureKafka"></a> Kafka configuration
 
 We will add kafka brokers to the docker-compose.yaml. Kafka needs zookeeper because of controller election, configuration of topics, access control lists, membership of the cluster etc. functionalities.
 Kafka brokers depends on zookeeper and open the ports 19092, 29092, 39092 in each. We also have some JMX environment variable for kafka manager which helps to pull some data for monitoring.
@@ -125,7 +125,7 @@ Kafka brokers depends on zookeeper and open the ports 19092, 29092, 39092 in eac
       - zookeeper-3
     environment:
       KAFKA_BROKER_ID: 1
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper-1:12181,zookeeper-2:12181,zookeeper-3:12181
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper-1:12181,zookeeper-2:22181,zookeeper-3:32181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-1:19092
       KAFKA_JMX_HOSTNAME: "kafka-1"
       KAFKA_JMX_PORT: 9999
@@ -147,7 +147,7 @@ Kafka brokers depends on zookeeper and open the ports 19092, 29092, 39092 in eac
       - zookeeper-3
     environment:
       KAFKA_BROKER_ID: 2
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper-1:12181,zookeeper-2:12181,zookeeper-3:12181
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper-1:12181,zookeeper-2:22181,zookeeper-3:32181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-2:29092
       KAFKA_JMX_HOSTNAME: "kafka-2"
       KAFKA_JMX_PORT: 9999
@@ -169,7 +169,7 @@ Kafka brokers depends on zookeeper and open the ports 19092, 29092, 39092 in eac
       - zookeeper-3
     environment:
       KAFKA_BROKER_ID: 3
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper-1:12181,zookeeper-2:12181,zookeeper-3:12181
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper-1:12181,zookeeper-2:22181,zookeeper-3:32181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-3:39092
       KAFKA_JMX_HOSTNAME: "kafka-3"
       KAFKA_JMX_PORT: 9999
@@ -185,7 +185,7 @@ Kafka brokers depends on zookeeper and open the ports 19092, 29092, 39092 in eac
     ports:
       - "9000:9000"
     environment:
-      ZK_HOSTS: "zookeeper-1:12181,zookeeper-2:12181,zookeeper-3:12181"
+      ZK_HOSTS: "zookeeper-1:12181,zookeeper-2:22181,zookeeper-3:32181"
       APPLICATION_SECRET: "random-secret"
     command: -Dpidfile.path=/dev/null
 
