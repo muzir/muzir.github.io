@@ -4,7 +4,7 @@ title:  Kafka Cluster with Docker Compose Part 2
 categories: [docker, docker-compose, kafka]
 fullview: false
 ---
-We introduce to run and test kafka cluster in local in the [first part of the Kafka Cluster series](https://muzir.github.io/http://muzir.github.io/spring/docker/docker-compose/kafka/2019/08/19/Spring-Boot-Kafka-Cluster-1.html){:target="_blank"}. In this post we will take a bit closer to 
+We introduce to run and test kafka cluster in local in the [first part of the Kafka Cluster series](http://muzir.github.io/docker/docker-compose/kafka/2019/08/19/Docker-Compose-Kafka-Cluster-1.html){:target="_blank"}. In this post we will take a bit closer to 
 how to use this Kafka Cluster as a middleware between different applications. Basically we will have a project which produce a message and in another project consume these messages and
 save to database.
 
@@ -18,7 +18,7 @@ it will has 3 partitions.
 # Configuration 
 
 We have 3 ```docker-compose.yaml``` files. One of them for kafka cluster, another one is for producer and last one for consumer. Kafka cluster ```docker-compose.yaml``` is same with the previous post so if you 
-want to check it in detail check the previous post in the [first part of the Kafka Cluster series](https://muzir.github.io/http://muzir.github.io/spring/docker/docker-compose/kafka/2019/08/19/Spring-Boot-Kafka-Cluster-1.html#configureKafka){:target="_blank"}.
+want to check it in detail check the previous post in the [first part of the Kafka Cluster series](http://muzir.github.io/docker/docker-compose/kafka/2019/08/19/Docker-Compose-Kafka-Cluster-1.html.html#configureKafka){:target="_blank"}.
 
 ## Producer Docker Compose Configuration
 
