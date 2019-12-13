@@ -115,6 +115,8 @@ networks:
       name: kafka_default
 
 ```
+# How to Run 
+
 
 
 # Result
