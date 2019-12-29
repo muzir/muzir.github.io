@@ -155,7 +155,7 @@ As a last step let's revisit kafka-manager again to see that is there any lag in
 
 ![kafka_manager_no_lag.png](/assets/media/kafka_manager_no_lag.png) 
 
-You can also see the incremental number of product record in the product table in time.
+You can also see the incremental number of product records in the product table in time.
 
 ![pgAdmin_product_count](/assets/media/pgAdmin_product_count.png) 
 
