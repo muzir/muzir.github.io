@@ -128,7 +128,9 @@ kafka-cluster docker-compose.yaml to monitor our clusters. First you have to def
 ![kafka_manager_add_cluster.png](/assets/media/kafka_manager_add_cluster.png) 
 
 Let's create our topic `Product.change`, you need a kafka client installed in your local and go to its bin directory to run `./kafka-topics.sh`.
-` ./kafka-topics.sh --create  --zookeeper zookeeper-1:12181,zookeeper-2:22181,zookeeper-3:32181 --replication-factor 3 --partitions 3 --topic Product.change` 
+
+`./kafka-topics.sh --create  --zookeeper zookeeper-1:12181,zookeeper-2:22181,zookeeper-3:32181 --replication-factor 3 --partitions 3 --topic Product.change`
+
 Topic should be created with following message `Created topic "Product.change".`
 Now we can run our consumer project or producer project in any order. I will run the consumer first via following command.
 
