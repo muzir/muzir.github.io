@@ -18,7 +18,7 @@ functionality of kafka brokers easily in the local.
 This project contains two docker-compose files, in this blogpost we will explain and test only the one which is for apache zookeeper, apache kafka and kafka-manager. Other docker compose file will be
 described in next blog post. Let's start with kafka configurations.
 
-## Zookeeper configuration
+## <a name="configureZookeeper"></a> Zookeeper configuration
 
 In below configuration first zookeeper nodes are configured. Zookeeper use port 2888 and 3888 for internal cluster communication and expose 2181 for external client communication.
 Because we are configuring all three nodes in same server. I added 1, 2, 3 as a suffix to all zookeeper servers port configuration to prevent port collision.
