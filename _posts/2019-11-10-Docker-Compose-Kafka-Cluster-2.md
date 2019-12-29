@@ -120,8 +120,8 @@ networks:
 ```
 # How to Run 
 
-First run the kafka cluster, if your kafka cluster is not running without error please check [the first post's Kafka and Zookeeper configurations],
-be sure your kafka and zookeeper host names defined in ```etc/host``` configurations (https://muzir.github.io/spring/docker/docker-compose/postgres/2019/03/24/Spring-Boot-Docker.html#configureZookeeper){:target="_blank"}.
+First run the kafka cluster, if your kafka cluster is not running without error please check [the first post's Kafka and Zookeeper configurations](https://muzir.github.io/spring/docker/docker-compose/postgres/2019/03/24/Spring-Boot-Docker.html#configureZookeeper){:target="_blank"},
+be sure your kafka and zookeeper host names defined in ```etc/host``` configurations.
 Now you can go to ```http://localhost:9000/addCluster``` to define your cluster in [Kafka Manager](https://github.com/yahoo/kafka-manager){:target="_blank"}. We define kafka-manager in 
 kafka-cluster docker-compose.yaml to monitor our clusters. First you have to define the cluster name and zookeeper hosts.
 
