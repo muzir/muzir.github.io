@@ -5,14 +5,14 @@ categories: [docker, docker-compose, kafka]
 fullview: false
 ---
 We introduce to run and test kafka cluster in local in the [first part of the Kafka Cluster series](http://muzir.github.io/docker/docker-compose/kafka/2019/08/19/Docker-Compose-Kafka-Cluster-1.html){:target="_blank"}. 
-In this post we will take a bit closer to how to use this Kafka Cluster as a middleware between different applications. 
+In this post we will take a bit closer to how to use the Kafka Cluster as a middleware between different applications. 
 Basically we will have a project which produce a message and in another project consume the message and
 save to database.
 
 # Introduction
 
-Currently we have two projects as consumer and producer. These two projects communicating via Kafka. Producer produce productChange message and publish it to ```Product.change``` topic.
-Consumer listen same topic check with product name if it hasn't save before then save it to ```product``` table. In current configuration we have one producer and 2 consumers.
+Currently we have two projects as consumer and producer. These two projects communicating via Kafka. Producer produce `ProductChange` message and publish it to ```Product.change``` topic.
+Consumer listen same topic check with product name if it hasn't saved before then save it to ```product``` table. In current configuration we have one producer and 2 consumers.
 When we will create ```Product.change``` topic, we will create it with ```--replication-factor``` 3 and ```--partitions``` as 3. So the topic will be replicated in 3 kafka brokers. And in each broker
 it will has 3 partitions.
  
@@ -23,8 +23,8 @@ want to check it in detail check the previous post in the [first part of the Kaf
 
 ## Producer Docker Compose Configuration
 
-Basically producer has service configuration and networks configuration. In service configuration point out project main folder with ```build``` so docker know to where to find 
-the project folder when it wants to build the image. ```ports``` when application starts it will serve in this port and in environment define the environment variables which 
+Basically producer has service configuration and networks configuration. In service configuration point out project main folder with ```build``` so docker engine know where to find 
+the project folder when it wants to build the image. ```ports```, application serves in this port and in ```environment``` define the environment variables which 
 will be used inside producer project. In ```networks``` instead of use the default docker network we explicitly define the network name. Because we want that all docker-compose.yamls 
 which will be used in consumer and producer should be in same network. If you are running consumer, producer and kafka cluster via same docker-compose.yaml we don't need to define network
 they will all use same network. But in our case we have to define the network name in each docker-compose.yaml file. 
@@ -120,10 +120,10 @@ networks:
 ```
 # How to Run 
 
-First run the kafka cluster, if your kafka cluster is not running without error please check [the first post's Kafka and Zookeeper configurations](http://muzir.github.io/docker/docker-compose/kafka/2019/08/19/Docker-Compose-Kafka-Cluster-1.html#configureZookeeper){:target="_blank"},
+First run the kafka cluster via following command `./cleanRun-kafka.sh`, if your kafka cluster doesn't run without error please check [the first post's Kafka and Zookeeper configurations](http://muzir.github.io/docker/docker-compose/kafka/2019/08/19/Docker-Compose-Kafka-Cluster-1.html#configureZookeeper){:target="_blank"},
 be sure your kafka and zookeeper host names defined in ```etc/host``` configurations.
 Now you can go to ```http://localhost:9000/addCluster``` to define your cluster in [Kafka Manager](https://github.com/yahoo/kafka-manager){:target="_blank"}. We define kafka-manager in 
-kafka-cluster docker-compose.yaml to monitor our clusters. First you have to define the cluster name and zookeeper hosts.
+kafka-cluster docker-compose.yaml to monitor our cluster. First you have to define the cluster, zookeeper hosts and click `Poll consumer information` to monitor consumer group lags.   
 
 ![kafka_manager_add_cluster.png](/assets/media/kafka_manager_add_cluster.png) 
 
@@ -173,6 +173,7 @@ You can find the all project [on Github](https://github.com/muzir/softwareLabs/t
 # References
 
 [https://github.com/confluentinc/cp-docker-images](https://github.com/confluentinc/cp-docker-images){:target="_blank"} 
+
 [https://github.com/confluentinc/examples/tree/5.1.1-post/microservices-orders](https://github.com/confluentinc/examples/tree/5.1.1-post/microservices-orders){:target="_blank"}
 
 Happy coding :) 
