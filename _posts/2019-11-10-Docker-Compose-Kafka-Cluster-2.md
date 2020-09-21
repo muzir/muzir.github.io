@@ -26,7 +26,7 @@ want to check it in detail check the previous post in the [first part of the Kaf
 Basically producer has service configuration and networks configuration. In service configuration point out project main folder with ```build``` so docker engine know where to find 
 the project folder when it wants to build the image. ```ports```, application serves in this port and in ```environment``` define the environment variables which 
 will be used inside producer project. In ```networks``` instead of use the default docker network we explicitly define the network name. Because we want that all docker-compose.yamls 
-which will be used in consumer and producer should be in same network. If you are running consumer, producer and kafka cluster via same docker-compose.yaml we don't need to define network
+which will be used in consumer and producer should be in same network. If you run consumer, producer and kafka cluster via same docker-compose.yaml we don't need to define network
 they will all use same network. But in our case we have to define the network name in each docker-compose.yaml file. 
 
 Another important point in producer is message key. In below code, message is created and published to kafka. ```ProducerRecord``` takes three parameters as topic name, key and value(message). 
