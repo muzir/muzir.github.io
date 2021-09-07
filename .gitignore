@@ -3,4 +3,9 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .DS_Store
-.idea
+.idea/misc.xml
+.idea/modules.xml
+.idea/muzir.github.io.iml
+.idea/runConfigurations.xml
+.idea/vcs.xml
+
