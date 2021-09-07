@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Kafka Cluster with Docker Compose Part 1
-categories: [docker, docker-compose, kafka]
+background: '/img/posts/background-kafka-1.jpg'
 fullview: false
 ---
 Apache Kafka is described itself as "distributed commit log" or more recently "distributing streaming platform". Kafka brokers 

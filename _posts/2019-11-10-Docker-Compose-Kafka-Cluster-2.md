@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Kafka Cluster with Docker Compose Part 2
-categories: [docker, docker-compose, kafka]
+background: '/img/posts/background-kafka-2.jpg'
 fullview: false
 ---
 We introduce to run and test kafka cluster in local in the [first part of the Kafka Cluster series](http://muzir.github.io/docker/docker-compose/kafka/2019/08/19/Docker-Compose-Kafka-Cluster-1.html){:target="_blank"}. 
