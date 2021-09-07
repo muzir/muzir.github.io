@@ -1,4 +1,4 @@
-# [muzir Tech Blog(https://muzir.github.io)
+# [muzir Tech Blog](https://muzir.github.io)
 
 ## Copyright and License
 
