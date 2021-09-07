@@ -1,0 +1,23 @@
+title:              Clean Blog
+email:              your-email@example.com
+description:        Simplicity is prerequisite for reliability ― Edsger W. Dijkstra
+author:             muzir
+baseurl:            "/"
+url:                "https://muzir.github.io"
+
+# Social Profiles
+twitter_username:   erhunbaycelik
+github_username:    muzir
+linkedin_username:  erhunbaycelik
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-140890411-1 # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
