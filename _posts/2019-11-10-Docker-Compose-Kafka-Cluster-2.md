@@ -120,9 +120,9 @@ networks:
 ```
 # How to Run 
 
-First run the kafka cluster via following command `./cleanRun-kafka.sh`, if your kafka cluster doesn't run without error please check [the first post's Kafka and Zookeeper configurations](http://muzir.github.io/docker/docker-compose/kafka/2019/08/19/Docker-Compose-Kafka-Cluster-1.html#configureZookeeper){:target="_blank"},
+First run the kafka cluster via following command `./cleanRun-kafka.sh`, if your kafka cluster doesn't run without error please check [the first post's Kafka and Zookeeper configurations](http://muzir.github.io/2019/08/19/Docker-Compose-Kafka-Cluster-1.html#configureZookeeper) {:target="_blank"},
 be sure your kafka and zookeeper host names defined in ```etc/host``` configurations.
-Now you can go to ```http://localhost:9000/addCluster``` to define your cluster in [Kafka Manager](https://github.com/yahoo/kafka-manager){:target="_blank"}. We define kafka-manager in 
+Now you can go to ```http://localhost:9000/addCluster``` to define your cluster in [Kafka Manager](https://github.com/yahoo/kafka-manager) {:target="_blank"}. We define kafka-manager in 
 kafka-cluster docker-compose.yaml to monitor our cluster. First you have to define the cluster, zookeeper hosts and click `Poll consumer information` to monitor consumer group lags.   
 
 ![kafka_manager_add_cluster.png](/img/posts/kafka_manager_add_cluster.png) 
@@ -172,8 +172,8 @@ You can find the all project [on Github](https://github.com/muzir/softwareLabs/t
 
 # References
 
-[https://github.com/confluentinc/cp-docker-images](https://github.com/confluentinc/cp-docker-images){:target="_blank"} 
+[https://github.com/confluentinc/cp-docker-images](https://github.com/confluentinc/cp-docker-images) {:target="_blank"} 
 
-[https://github.com/confluentinc/examples/tree/5.1.1-post/microservices-orders](https://github.com/confluentinc/examples/tree/5.1.1-post/microservices-orders){:target="_blank"}
+[https://github.com/confluentinc/examples/tree/5.1.1-post/microservices-orders](https://github.com/confluentinc/examples/tree/5.1.1-post/microservices-orders) {:target="_blank"}
 
 Happy coding :) 
