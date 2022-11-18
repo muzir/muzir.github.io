@@ -4,7 +4,7 @@ title:  Kafka Cluster with Docker Compose Part 2
 background: '/img/posts/background-kafka-2.jpg'
 fullview: false
 ---
-We introduce to run and test kafka cluster in local in the [first part of the Kafka Cluster series](http://muzir.github.io/docker/docker-compose/kafka/2019/08/19/Docker-Compose-Kafka-Cluster-1.html){:target="_blank"}. 
+We introduce to run and test kafka cluster in local in the [first part of the Kafka Cluster series](https://muzir.github.io/2019/08/19/Docker-Compose-Kafka-Cluster-1.html){:target="_blank"}. 
 In this post we will take a bit closer to how to use the Kafka Cluster as a middleware between different applications. 
 Basically we will have a project which produce a message and in another project consume the message and
 save to database.
