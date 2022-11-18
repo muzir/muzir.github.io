@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Wirecard Interview
-categories: [interview]
 fullview: false
 ---
 

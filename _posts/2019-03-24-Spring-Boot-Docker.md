@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Spring Boot with Docker
-categories: [spring, docker, docker-compose, postgres]
 fullview: false
 ---
 

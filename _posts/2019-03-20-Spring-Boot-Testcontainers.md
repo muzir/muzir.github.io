@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Introduction to Testcontainers
-categories: [spring, testing, docker, testcontainers, postgres]
 fullview: false
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Spring Boot Kafka
-categories: [spring, docker, docker-compose, kafka]
 fullview: false
 ---
 

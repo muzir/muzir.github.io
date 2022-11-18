@@ -19,7 +19,7 @@ it will has 3 partitions.
 # Configuration 
 
 We have 3 ```docker-compose.yaml``` files. One of them for kafka cluster, another one is for producer and last one for consumer. Kafka cluster ```docker-compose.yaml``` is same with the previous post so if you 
-want to check it in detail check the previous post in the [first part of the Kafka Cluster series](http://muzir.github.io/docker/docker-compose/kafka/2019/08/19/Docker-Compose-Kafka-Cluster-1.html#configureKafka){:target="_blank"}.
+want to check it in detail check the previous post in the [first part of the Kafka Cluster series](http://muzir.github.io/2019/08/19/Docker-Compose-Kafka-Cluster-1.html#configureKafka) {:target="_blank"}.
 
 ## Producer Docker Compose Configuration
 
@@ -68,7 +68,7 @@ networks:
 
 ## Consumer Docker Compose Configuration
 
-Consumer project is using a postgres database if you want to check its configuration in detail, you can check [configure postgres section in spring boot docker post.](https://muzir.github.io/spring/docker/docker-compose/postgres/2019/03/24/Spring-Boot-Docker.html#configurePostgres){:target="_blank"}
+Consumer project is using a postgres database if you want to check its configuration in detail, you can check [configure postgres section in spring boot docker post.](https://muzir.github.io/2019/03/24/Spring-Boot-Docker.html#configurePostgres) {:target="_blank"}
 We are running two consumers to simulate cluster environment where two nodes listen same topic and consume messages in same consumer group. This is the one of the advantage of Kafka. It is easy to provide a parallel environment and increase the throughput and reduce the latency of the applications.
 Because both consumers are in same consumer group they will share the partitions of the topic. If one of the consumer may stop because of some reasons(network or node crash etc.), the other one continue to consume the messages which provide availability and eventual consistency. 
  
