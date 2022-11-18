@@ -4,7 +4,7 @@ title:  Kafka Cluster with Docker Compose Part 2
 background: '/img/posts/background-kafka-2.jpg'
 fullview: false
 ---
-We introduce to run and test kafka cluster in local in the [first part of the Kafka Cluster series](https://muzir.github.io/2019/08/19/Docker-Compose-Kafka-Cluster-1.html){:target="_blank"}. 
+We introduce to run and test kafka cluster in local in the [first part of the Kafka Cluster series](https://muzir.github.io/2019/08/19/Docker-Compose-Kafka-Cluster-1.html) {:target="_blank"}. 
 In this post we will take a bit closer to how to use the Kafka Cluster as a middleware between different applications. 
 Basically we will have a project which produce a message and in another project consume the message and
 save to database.
@@ -125,7 +125,7 @@ be sure your kafka and zookeeper host names defined in ```etc/host``` configurat
 Now you can go to ```http://localhost:9000/addCluster``` to define your cluster in [Kafka Manager](https://github.com/yahoo/kafka-manager) {:target="_blank"}. We define kafka-manager in 
 kafka-cluster docker-compose.yaml to monitor our cluster. First you have to define the cluster, zookeeper hosts and click `Poll consumer information` to monitor consumer group lags.   
 
-![kafka_manager_add_cluster.png](/img/posts/kafka_manager_add_cluster.png) 
+![kafka_manager_add_cluster.png](/img/posts/kafka_manager_add_cluster_50.png) 
 
 Let's create our topic `Product.change`, you need a kafka client installed in your local and go to its bin directory to run `./kafka-topics.sh`.
 
