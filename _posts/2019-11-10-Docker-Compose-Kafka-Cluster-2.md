@@ -4,7 +4,7 @@ title:  Kafka Cluster with Docker Compose Part 2
 background: '/img/posts/background-kafka-2.jpg'
 fullview: false
 ---
-We introduce to run and test kafka cluster in local in the [first part of the Kafka Cluster series](https://muzir.github.io/2019/08/19/Docker-Compose-Kafka-Cluster-1.html) {:target="_blank"}. 
+We introduce to run and test kafka cluster in local in the [first part of the Kafka Cluster series](https://muzir.github.io/2019/08/19/Docker-Compose-Kafka-Cluster-1.html). 
 In this post we will take a bit closer to how to use the Kafka Cluster as a middleware between different applications. 
 Basically we will have a project which produce a message and in another project consume the message and
 save to database.
@@ -19,7 +19,7 @@ it will has 3 partitions.
 # Configuration 
 
 We have 3 ```docker-compose.yaml``` files. One of them for kafka cluster, another one is for producer and last one for consumer. Kafka cluster ```docker-compose.yaml``` is same with the previous post so if you 
-want to check it in detail check the previous post in the [first part of the Kafka Cluster series](http://muzir.github.io/2019/08/19/Docker-Compose-Kafka-Cluster-1.html#configureKafka) {:target="_blank"}.
+want to check it in detail check the previous post in the [first part of the Kafka Cluster series](http://muzir.github.io/2019/08/19/Docker-Compose-Kafka-Cluster-1.html#configureKafka) .
 
 ## Producer Docker Compose Configuration
 
@@ -68,7 +68,7 @@ networks:
 
 ## Consumer Docker Compose Configuration
 
-Consumer project is using a postgres database if you want to check its configuration in detail, you can check [configure postgres section in spring boot docker post.](https://muzir.github.io/2019/03/24/Spring-Boot-Docker.html#configurePostgres) {:target="_blank"}
+Consumer project is using a postgres database if you want to check its configuration in detail, you can check [configure postgres section in spring boot docker post.](https://muzir.github.io/2019/03/24/Spring-Boot-Docker.html#configurePostgres) 
 We are running two consumers to simulate cluster environment where two nodes listen same topic and consume messages in same consumer group. This is the one of the advantage of Kafka. It is easy to provide a parallel environment and increase the throughput and reduce the latency of the applications.
 Because both consumers are in same consumer group they will share the partitions of the topic. If one of the consumer may stop because of some reasons(network or node crash etc.), the other one continue to consume the messages which provide availability and eventual consistency. 
  
@@ -120,9 +120,9 @@ networks:
 ```
 # How to Run 
 
-First run the kafka cluster via following command `./cleanRun-kafka.sh`, if your kafka cluster doesn't run without error please check [the first post's Kafka and Zookeeper configurations](http://muzir.github.io/2019/08/19/Docker-Compose-Kafka-Cluster-1.html#configureZookeeper) {:target="_blank"},
+First run the kafka cluster via following command `./cleanRun-kafka.sh`, if your kafka cluster doesn't run without error please check [the first post's Kafka and Zookeeper configurations](http://muzir.github.io/2019/08/19/Docker-Compose-Kafka-Cluster-1.html#configureZookeeper) ,
 be sure your kafka and zookeeper host names defined in ```etc/host``` configurations.
-Now you can go to ```http://localhost:9000/addCluster``` to define your cluster in [Kafka Manager](https://github.com/yahoo/kafka-manager) {:target="_blank"}. We define kafka-manager in 
+Now you can go to ```http://localhost:9000/addCluster``` to define your cluster in [Kafka Manager](https://github.com/yahoo/kafka-manager) . We define kafka-manager in 
 kafka-cluster docker-compose.yaml to monitor our cluster. First you have to define the cluster, zookeeper hosts and click `Poll consumer information` to monitor consumer group lags.   
 
 ![kafka_manager_add_cluster.png](/img/posts/kafka_manager_add_cluster_50.png) 
@@ -168,12 +168,12 @@ I set the docker engine configuration in Docker Desktop application(version 19.0
 
 ![Docker Desktop Engine Configuration.png](	/img/posts/dockerDesktopEngine_configuration.png) 
 
-You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-kafka-cluster){:target="_blank"}
+You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-kafka-cluster)
 
 # References
 
-[https://github.com/confluentinc/cp-docker-images](https://github.com/confluentinc/cp-docker-images) {:target="_blank"} 
+[https://github.com/confluentinc/cp-docker-images](https://github.com/confluentinc/cp-docker-images)  
 
-[https://github.com/confluentinc/examples/tree/5.1.1-post/microservices-orders](https://github.com/confluentinc/examples/tree/5.1.1-post/microservices-orders) {:target="_blank"}
+[https://github.com/confluentinc/examples/tree/5.1.1-post/microservices-orders](https://github.com/confluentinc/examples/tree/5.1.1-post/microservices-orders) 
 
 Happy coding :) 

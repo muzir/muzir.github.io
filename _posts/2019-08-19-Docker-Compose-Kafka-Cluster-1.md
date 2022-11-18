@@ -22,7 +22,7 @@ described in next blog post. Let's start with kafka configurations.
 
 In below configuration first zookeeper nodes are configured. Zookeeper use port 2888 and 3888 for internal cluster communication and expose 2181 for external client communication.
 Because we are configuring all three nodes in same server. I added 1, 2, 3 as a suffix to all zookeeper servers port configuration to prevent port collision.
-The 2888 ports are used for peers communication and the 3888 ports are used for leader elections. More about you can find in the [official ZooKeeper documentation](https://zookeeper.apache.org/doc/current/zookeeperStarted.html){:target="_blank"}.
+The 2888 ports are used for peers communication and the 3888 ports are used for leader elections. More about you can find in the [official ZooKeeper documentation](https://zookeeper.apache.org/doc/current/zookeeperStarted.html) {:target="_blank"}.
 
 ```yaml
 version: '3.7'
