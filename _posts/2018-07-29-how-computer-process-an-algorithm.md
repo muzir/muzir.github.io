@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How a Good Programmer Perform Better in a Slow Computer
-categories: [algorithms]
 fullview: false
 ---
 

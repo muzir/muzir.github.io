@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Spring Boot KafkaTestContainer
-categories: [spring, docker, docker-compose, kafka]
 fullview: false
 ---
 In event based architecture integration test is hard. Because of event based architecture is asynchronous, it is hard to test that events 
