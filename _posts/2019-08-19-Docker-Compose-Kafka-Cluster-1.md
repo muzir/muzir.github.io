@@ -22,7 +22,7 @@ described in next blog post. Let's start with kafka configurations.
 
 In below configuration first zookeeper nodes are configured. Zookeeper use port 2888 and 3888 for internal cluster communication and expose 2181 for external client communication.
 Because we are configuring all three nodes in same server. I added 1, 2, 3 as a suffix to all zookeeper servers port configuration to prevent port collision.
-The 2888 ports are used for peers communication and the 3888 ports are used for leader elections. More about you can find in the [official ZooKeeper documentation](https://zookeeper.apache.org/doc/current/zookeeperStarted.html) {:target="_blank"}.
+The 2888 ports are used for peers communication and the 3888 ports are used for leader elections. More about you can find in the [official ZooKeeper documentation](https://zookeeper.apache.org/doc/current/zookeeperStarted.html).
 
 ```yaml
 version: '3.7'
@@ -191,7 +191,7 @@ Kafka brokers depends on zookeeper and open the ports 19092, 29092, 39092 in eac
 
 ```
 
-When we run the [cleanRun-kafka.sh](https://github.com/muzir/softwareLabs/blob/master/spring-boot-kafka-cluster/cleanRun-kafka.sh){:target="_blank"} file kafka brokers will start in localhost.
+When we run the [cleanRun-kafka.sh](https://github.com/muzir/softwareLabs/blob/master/spring-boot-kafka-cluster/cleanRun-kafka.sh) file kafka brokers will start in localhost.
 Now you may want to test just kafka brokers. First define the hostname in your local host file. It should be look as below.
 
 ```
@@ -204,7 +204,7 @@ Now you may want to test just kafka brokers. First define the hostname in your l
 
 ## Configure KafkaCat Tool 
 
-Now let's tests our kafka cluster with [kafkacat tool](https://github.com/edenhill/kafkacat){:target="_blank"}. Produce a message to the test_kafka_cluster topic in kafka-1 broker.
+Now let's tests our kafka cluster with [kafkacat tool](https://github.com/edenhill/kafkacat). Produce a message to the test_kafka_cluster topic in kafka-1 broker.
 
 ```kafkacat -P -b kafka-1:19092 -t test_kafka_cluster```
 
@@ -218,20 +218,20 @@ You can check below diagram for all configuration which described above.
 
 ![zookeeper-cluster](	/img/posts/kafka-cluster-step3.gif)
 
-You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-kafka-cluster){:target="_blank"}
+You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-kafka-cluster)
 
 # References
 
-[https://better-coding.com/building-apache-kafka-cluster-using-docker-compose-and-virtualbox](https://better-coding.com/building-apache-kafka-cluster-using-docker-compose-and-virtualbox){:target="_blank"}
+[https://better-coding.com/building-apache-kafka-cluster-using-docker-compose-and-virtualbox](https://better-coding.com/building-apache-kafka-cluster-using-docker-compose-and-virtualbox)
 
-[https://www.youtube.com/watch?v=CUic2NZKmzo](https://www.youtube.com/watch?v=CUic2NZKmzo){:target="_blank"}
+[https://www.youtube.com/watch?v=CUic2NZKmzo](https://www.youtube.com/watch?v=CUic2NZKmzo)
 
-[https://github.com/confluentinc/cp-docker-images](https://github.com/confluentinc/cp-docker-images){:target="_blank"}
+[https://github.com/confluentinc/cp-docker-images](https://github.com/confluentinc/cp-docker-images)
 
-[https://docs.confluent.io/current/installation/docker/config-reference.html](https://docs.confluent.io/current/installation/docker/config-reference.html){:target="_blank"}
+[https://docs.confluent.io/current/installation/docker/config-reference.html](https://docs.confluent.io/current/installation/docker/config-reference.html)
 
-[https://medium.com/rahasak/kafka-and-zookeeper-with-docker-65cff2c2c34f](https://medium.com/rahasak/kafka-and-zookeeper-with-docker-65cff2c2c34f){:target="_blank"}
+[https://medium.com/rahasak/kafka-and-zookeeper-with-docker-65cff2c2c34f](https://medium.com/rahasak/kafka-and-zookeeper-with-docker-65cff2c2c34f)
 
-[https://github.com/wurstmeister/kafka-docker/wiki/Connectivity](https://github.com/wurstmeister/kafka-docker/wiki/Connectivity){:target="_blank"}
+[https://github.com/wurstmeister/kafka-docker/wiki/Connectivity](https://github.com/wurstmeister/kafka-docker/wiki/Connectivity)
 
 Happy coding :) 
