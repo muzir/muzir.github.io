@@ -197,11 +197,11 @@ for example ```@WebMvcTest(ProductController.class)```.
 
 So Spring is not start the server at all, just test the web layer. In our example just one controller and its dependencies.
 
-You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-integration-test){:target="_blank"}
+You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-integration-test)
 
 
 ### References
 
-[https://spring.io/guides/gs/testing-web/](https://spring.io/guides/gs/testing-web/){:target="_blank"}
+[https://spring.io/guides/gs/testing-web/](https://spring.io/guides/gs/testing-web/)
 
 Happy coding :) 
