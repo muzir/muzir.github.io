@@ -142,7 +142,7 @@ When consumer fetch records from broker it reads the records in a batch. This pr
 
 ## Postgres configuration
 
-For postgres configuration read [configure postgres section in spring boot docker post.](https://muzir.github.io/spring/docker/docker-compose/postgres/2019/03/24/Spring-Boot-Docker.html#configurePostgres){:target="_blank"}, same 
+For postgres configuration read [configure postgres section in spring boot docker post.](https://muzir.github.io/2019/03/24/Spring-Boot-Docker.html#configurePostgres), same 
 configuration is using in this project too.
 
 ## Kafka configuration
@@ -442,10 +442,10 @@ production usage as well.
 
 # Result
 
-You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-kafka){:target="_blank"}
+You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-kafka)
 
 # References
 
-[https://www.confluent.io/blog/apache-kafka-spring-boot-application](https://www.confluent.io/blog/apache-kafka-spring-boot-application){:target="_blank"}
+[https://www.confluent.io/blog/apache-kafka-spring-boot-application](https://www.confluent.io/blog/apache-kafka-spring-boot-application)
 
 Happy coding :) 
