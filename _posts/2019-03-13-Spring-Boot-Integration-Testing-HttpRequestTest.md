@@ -16,7 +16,7 @@ client/friend come to your table and blame you that your endpoints are not worki
 ```TestRestTemplate``` helps us to send http request in our integration tests. To do that need all application context
 should be running. Also Spring run a local server in a random port ```@LocalServerPort```. So just need to create the request in integration tests and 
 send it like a clients of your servers. ```TestRestTemplate``` have all necessary methods to send the request to server 
-with a convenient way similar to [RestTemplate](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html){:target="_blank"}.
+with a convenient way similar to [RestTemplate](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html).
 
 ### Configuration
 
@@ -78,12 +78,12 @@ delay to your build pipeline, they should be configure wisely. Also it is a good
 
 So Spring starts the server and make the tests as much as close to production environment.
 
-You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-integration-test){:target="_blank"}
+You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-integration-test)
 
 
 ### References
 
-[https://spring.io/guides/gs/testing-web/](https://spring.io/guides/gs/testing-web/){:target="_blank"}
+[https://spring.io/guides/gs/testing-web/](https://spring.io/guides/gs/testing-web/)
 
 Happy coding :) 
 
