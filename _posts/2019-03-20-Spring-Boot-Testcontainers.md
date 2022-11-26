@@ -40,6 +40,11 @@ Created a configuration class for integration tests dependency beans. ```Postgre
 IntegrationTestConfiguration class. Also need to set the ```DataSource``` bean as ```@Primary```, because application context initialize  
 a default data source and in ```IntegrationTestConfiguration``` created another one. So it should know which one is injected primarily.
 
+
+<script src="https://gist.github.com/muzir/8f2254213b36cfd7d7061545b62572ba.js"></script>
+
+
+
 ```java
 @Configuration
 public class IntegrationTestConfiguration {
