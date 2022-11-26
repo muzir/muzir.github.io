@@ -77,12 +77,12 @@ Also before run your tests check the docker first. Docker should be running at y
 ### Result
 
 
-You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-containers){:target="_blank"}
+You can find the all project [on Github](https://github.com/muzir/softwareLabs/tree/master/spring-boot-containers)
 
 
 ### References
 
-[https://www.testcontainers.org/](https://www.testcontainers.org/){:target="_blank"}
+[https://www.testcontainers.org/](https://www.testcontainers.org/)
 
 
 Happy coding :) 
