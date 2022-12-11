@@ -5,7 +5,27 @@ background: '/img/posts/background_postgres_transactions.jpg'
 fullview: false
 ---
 
+Few days ago, I was reviewing a simple change in one of our team's repository. It was a one line change in one of our main domain object. Simply inside a transaction there are
+below operations;
 
+```
+start transaction
+
+Order order = getOrderFromDatabase(orderId);
+order.setState(PROCESSED)
+update(order)
+/*
+* some other operations
+*/ 
+Order order = getOrderFromDatabase(orderId);
+sendOrder(order)
+
+end transaction
+```
+
+Even if one has changed, the code block is critical for our business use case. Also I had confused especially about the second `getOrderFromDatabase` method.
+The question was how the database behaves in that case where data updated however transaction was not committed yet. Before proceed with the deeper investigation
+better to give some context our tech stack. This is a Spring boot java application and we use postgres as a database.  
 
 ### Deeper Investigation
 
@@ -14,14 +34,11 @@ fullview: false
 ### Mystery Resolving
 
 
+### Testing Postgres Transactions
 
-### Testing Max Header Size 
+#### Testing with Single Thread
 
-
-#### Testing with Tomcat
-
-
-#### Testing with Jetty
+#### Testing with Multi Threads
 
 
 ### Notes
