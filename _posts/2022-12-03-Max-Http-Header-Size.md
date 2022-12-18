@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Http Header Size - Difference Between Tomcat and Jetty Application Servers  
+title: Http Header Size - Difference Between Tomcat and Jetty Application Servers
+background: '/img/posts/background_tomcat_vs_jetty.jpg'
 fullview: false
 ---
 
@@ -71,6 +72,8 @@ You can find the all project [on Github](https://github.com/muzir/softwareLabs/t
 [Stackoverflow maximum-on-http-header-values](https://stackoverflow.com/questions/686217/maximum-on-http-header-values)
 
 [Baeldung spring-boot-max-http-header-size](https://www.baeldung.com/spring-boot-max-http-header-size)
+
+[Background picture reference](https://www.dailyrazor.com/blog/tomcat-vs-jetty/)
 
 Happy coding :) 
 
