@@ -57,7 +57,7 @@ sendOrder(order)
 end transaction
 ```
 
-### Mystery Resolving
+### Mystery Solved
 
 To answer the above, `why?` I need to read the postgres READ COMMITTED documentation a bit more carefully, [in here it states as](https://www.postgresql.org/docs/current/transaction-iso.html#:~:text=Read%20Committed%20is%20the%20default,query%20execution%20by%20concurrent%20transactions)
 
