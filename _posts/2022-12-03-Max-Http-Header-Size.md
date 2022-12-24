@@ -18,7 +18,7 @@ that all failed requests are greater than 7,5 KBs. So something should be wrong 
 we realized it is one of the common services which we use as a gateway. At the same time I was checking the Internet to find out any similar cases and potential solutions.
 I come up these two useful resources([stackoverflow](https://stackoverflow.com/questions/686217/maximum-on-http-header-values), [baeldung](https://www.baeldung.com/spring-boot-max-http-header-size) which are similar to my problem.
 
-### Mystery Resolving
+### Mystery Solved
 
 These two links give clear ideas regarding that problem and how to solve it. Now I decided to prove it myself based on what I understand from these resources. Stackoverflow
 answers assert that servers and application servers have different default limits for request's payload and header sizes. And baeldung provide how to change that attribute
