@@ -158,9 +158,13 @@ You can find the [all project on Github](https://github.com/muzir/softwareLabs/t
 ### References
 
 [Spring transaction manager strategies](https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/transaction.html#transaction-strategies)
+
 [Spring Doc DEFAULT](https://docs.spring.io/spring-framework/docs/4.1.5.RELEASE/spring-framework-reference/html/transaction.html#transaction-declarative-attransactional-settings)
+
 [Spring Java doc default isolation level](https://docs.spring.io/spring-framework/docs/5.0.x/javadoc-api/org/springframework/transaction/annotation/Isolation.html#DEFAULT)
+
 [What is the default isolation level of the Postgres database?](https://www.postgresql.org/docs/current/transaction-iso.html#XACT-READ-COMMITTED)
+
 [Background picture reference](https://www.reddit.com/r/Elephants/comments/si1duq/african_elephants_anup_shahscience_photo_library/)
 
 Happy coding :) 
