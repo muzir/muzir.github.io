@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring Boot Migration from 2 to 3 
+title: Spring Boot 3.0 Migration
 background: '/img/posts/background_spring_boot_3.jpeg'
 fullview: false
 ---
