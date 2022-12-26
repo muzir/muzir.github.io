@@ -91,9 +91,13 @@ Spring released a major upgrade which makes the platform more stabilized with [J
 ### References
 
 [Spring Boot 3 project announcement](https://spring.io/blog/2022/11/24/spring-boot-3-0-goes-ga)
+
 [Spring Boot 3 Migration Guide](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide)
+
 [Gradle Spring Boot Plugin Page](https://docs.spring.io/spring-boot/docs/3.0.0-SNAPSHOT/gradle-plugin/reference/htmlsingle/)
+
 [Sequence Naming Strategies In Hibernate 6](https://thorben-janssen.com/sequence-naming-strategies-in-hibernate-6/)
+
 [Background picture reference](https://www.jrebel.com/blog/what-expect-spring-boot-3)
 
 Happy coding :) 
